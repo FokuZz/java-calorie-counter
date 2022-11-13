@@ -1,10 +1,8 @@
 public class Converter {
     double kmInSteps(double sum){
-        sum=(sum*75)/100000;
-        return sum;
+        return (sum*75)/100000;
     }
     double kKalInSteps(double sum){
-        sum=(sum/1300)*55;
-        return sum;
+        return (sum/1300)*55;
     }
 }

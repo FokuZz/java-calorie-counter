@@ -1,11 +1,11 @@
 public class StepTracker {
-    int[][] trackArray = new int[12][30]; // Вводим двумерны массив где 12 это месяц, а 30 это дни. В месяц мы будем суммировать шаги
+    final int[][] trackArray = new int[12][30]; // Вводим двумерны массив где 12 это месяц, а 30 это дни. В месяц мы будем суммировать шаги
     int avrInDay = 10000;
     void addStepsDay(int steps, int mouth, int day){ // Вводит количество шагов за определённый день
         trackArray[mouth-1][day-1]+=steps;
     }
     void printStatistic(int mouth){
-            double sum = 0;
+            double sum = 0.0;
             int[] maxDay = {0,0};
             int nMax = 0;
             int countMax = 0;
